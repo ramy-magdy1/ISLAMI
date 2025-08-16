@@ -23,6 +23,18 @@ class MyApp extends StatelessWidget {
           ],
           leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
 
+        ),
+        body:Column(
+          children: [
+            Text("islami"),
+            Text("islami"),
+            Row(
+              children: [
+                Text("islami"),
+                Text("islami"),
+              ],
+            )
+          ],
         )
       ),
     );
