@@ -24,17 +24,42 @@ class MyApp extends StatelessWidget {
           leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
 
         ),
-        body:Column(
-          children: [
-            Text("islami"),
-            Text("islami"),
-            Row(
-              children: [
-                Text("islami"),
-                Text("islami"),
-              ],
-            )
-          ],
+        body:ListView(
+          children: [ Column(
+            children: [
+              Text("islami"),
+              Text("islami"),
+              Row(
+                children: [
+                  Text("islami"),
+                  Text("islami"),
+                ],
+              )
+            ],
+          ),
+          Form(child:
+          Column(
+            children: [
+              TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "name",
+                  prefixIcon: Icon(Icons.person),
+
+                )
+              ),
+              TextFormField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: "email",
+                  prefixIcon: Icon(Icons.email),
+                )
+
+              ),
+            ],
+          )
+          )
+          ]
         )
       ),
     );
