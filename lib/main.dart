@@ -11,9 +11,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
 
-      home:Scaffold(),
+///added appbar
+      home:Scaffold(
+        appBar: AppBar(
+          title: Text("islami"),
+          actions: [
+            IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+            IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+
+          ],
+          leading: IconButton(onPressed: (){}, icon: Icon(Icons.arrow_back_ios)),
+
+        )
+      ),
     );
   }
 }
