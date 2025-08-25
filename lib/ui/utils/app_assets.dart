@@ -11,4 +11,7 @@ abstract final class AppAssets {
   static const String recentSuraImage = 'assets/images/recent_sura_image.png';
   static const String splashImage = 'assets/images/splash_image.png';
   static const String suraNumberBg = 'assets/images/sura_number_bg.png';
+  static const String cornerLeft = 'assets/images/corner_left.png';
+  static const String cornerRight = 'assets/images/corner_right.png';
+  static const String mousque = 'assets/images/mousque_image.png';
 }
